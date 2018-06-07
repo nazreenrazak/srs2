@@ -17,6 +17,9 @@ from django.db.models import Count, Sum, Q, Case, Value, When, IntegerField
 def home(request):
 	return render(request,'base.html')
 
+def home_freelancer(request):
+	return render(request,'student/index.html')
+
 def home_json(request):
     return render(request, 'student/home_json.html')
 
